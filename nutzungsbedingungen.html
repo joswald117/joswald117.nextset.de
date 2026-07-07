@@ -3,46 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutzungsbedingungen - nextset</title>
+    <title>Nutzungsbedingungen / Terms of Service - nextset</title>
+    <style>
+        /* Einfaches, cleanes Design */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Styles für den Sprachumschalter oben rechts */
+        .language-switcher {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .lang-btn {
+            background: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.2s ease;
+        }
+
+        .lang-btn:hover {
+            background: #e0e0e0;
+        }
+
+        .lang-btn.active {
+            background: #007aff;
+            color: white;
+            border-color: #007aff;
+        }
+
+        /* Blendet die jeweils inaktive Sprache aus */
+        .lang-en, .lang-de {
+            display: none;
+        }
+
+        /* Standardmäßig zeigen wir Deutsch (wird per JS gesteuert) */
+        .visible {
+            display: block;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Nutzungsbedingungen</h1>
-    <p><strong>Stand: 07.07.2026</strong></p>
-    
-    <p>Willkommen bei <strong>nextset</strong>. Mit der Nutzung dieser App erklärst du dich mit diesen Nutzungsbedingungen einverstanden. Bitte lies sie sorgfältig durch.</p>
+    <div class="language-switcher">
+        <button class="lang-btn active" onclick="switchLanguage('de')">DE</button>
+        <button class="lang-btn" onclick="switchLanguage('en')">EN</button>
+    </div>
 
-    <hr>
+    <div id="content-de" class="lang-de visible">
+        <h1>Nutzungsbedingungen</h1>
+        <p><strong>Stand: 07.07.2026</strong></p>
+        
+        <p>Willkommen bei <strong>nextset</strong>. Mit der Nutzung dieser App erklärst du dich mit diesen Nutzungsbedingungen einverstanden. Bitte lies sie sorgfältig durch.</p>
 
-    <h2>Geltungsbereich</h2>
-    <p>Diese Nutzungsbedingungen regeln die Nutzung der mobilen App nextset sowie aller zugehörigen Funktionen und Inhalte.</p>
+        <hr>
 
-    <h2>Zweck der App</h2>
-    <p>nextset dient der Unterstützung bei der Planung, Dokumentation und Durchführung von Trainings. Die App ist ausschließlich für die persönliche, nicht-kommerzielle Nutzung gedacht.</p>
+        <h2>Geltungsbereich</h2>
+        <p>Diese Nutzungsbedingungen regeln die Nutzung der mobilen App nextset sowie aller zugehörigen Funktionen und Inhalte.</p>
 
-    <h2>Nutzungsumfang</h2>
-    <p>Du verpflichtest dich, die App nur rechtmäßig und in Übereinstimmung mit diesen Bedingungen zu verwenden. Du darfst keine Inhalte einfügen oder verbreiten, die gegen geltendes Recht, Rechte Dritter oder die guten Sitten verstoßen.</p>
+        <h2>Zweck der App</h2>
+        <p>nextset dient der Unterstützung bei der Planung, Dokumentation und Durchführung von Trainings. Die App ist ausschließlich für die persönliche, nicht-kommerzielle Nutzung gedacht.</p>
 
-    <h2>Verantwortung des Nutzers</h2>
-    <p>Du bist dafür verantwortlich, dass deine Geräte, Konten und Zugangsdaten sicher verwendet werden. Du trägst die Verantwortung für die Daten, die du in der App erfasst oder speicherst.</p>
+        <h2>Nutzungsumfang</h2>
+        <p>Du verpflichtest dich, die App nur rechtmäßig und in Übereinstimmung mit diesen Bedingungen zu verwenden. Du darfst keine Inhalte einfügen oder verbreiten, die gegen geltendes Recht, Rechte Dritter oder die guten Sitten verstoßen.</p>
 
-    <h2>Daten und Speicherung</h2>
-    <p>nextset speichert Trainingsdaten, Einstellungen und Benachrichtigungspräferenzen lokal auf deinem Gerät. Die App nutzt keine zusätzlichen externen Dienste zur Verarbeitung deiner Daten. Für bestimmte Funktionen können Berechtigungen wie Benachrichtigungen oder Kalenderzugriff benötigt werden, die du ausdrücklich erteilen musst.</p>
+        <h2>Verantwortung des Nutzers</h2>
+        <p>Du bist dafür verantwortlich, dass deine Geräte, Konten und Zugangsdaten sicher verwendet werden. Du trägst die Verantwortung für die Daten, die du in der App erfasst oder speicherst.</p>
 
-    <h2>Haftung</h2>
-    <p>Die App wird ohne Gewährleistung für einen bestimmten Zweck bereitgestellt. Wir übernehmen keine Haftung für Datenverlust, technische Störungen, Ausfälle, indirekte Schäden oder sonstige Folgen, die aus der Nutzung der App entstehen, soweit dies gesetzlich zulässig ist.</p>
+        <h2>Daten und Speicherung</h2>
+        <p>nextset speichert Trainingsdaten, Einstellungen und Benachrichtigungspräferenzen lokal auf deinem Gerät. Die App nutzt keine zusätzlichen externen Dienste zur Verarbeitung deiner Daten. Für bestimmte Funktionen können Berechtigungen wie Benachrichtigungen oder Kalenderzugriff benötigt werden, die du ausdrücklich erteilen musst.</p>
 
-    <h2>Änderungen und Aktualisierungen</h2>
-    <p>Wir behalten uns vor, die App, ihre Funktionen oder diese Nutzungsbedingungen jederzeit anzupassen oder zu aktualisieren. Änderungen werden wir nach Möglichkeit rechtzeitig bekanntgeben.</p>
+        <h2>Haftung</h2>
+        <p>Die App wird ohne Gewährleistung für einen bestimmten Zweck bereitgestellt. Wir übernehmen keine Haftung für Datenverlust, technische Störungen, Ausfälle, indirekte Schäden oder sonstige Folgen, die aus der Nutzung der App entstehen, soweit dies gesetzlich zulässig ist.</p>
 
-    <h2>Beendigung der Nutzung</h2>
-    <p>Du kannst die Nutzung der App jederzeit beenden. Bei Verstößen gegen diese Bedingungen kann der Zugriff auf die App eingeschränkt oder beendet werden.</p>
+        <h2>Änderungen und Aktualisierungen</h2>
+        <p>Wir behalten uns vor, die App, ihre Funktionen oder diese Nutzungsbedingungen jederzeit anzupassen oder zu aktualisieren. Änderungen werden wir nach Möglichkeit rechtzeitig bekanntgeben.</p>
 
-    <h2>Kontakt</h2>
-    <p>Bei Fragen zu diesen Nutzungsbedingungen oder zur App kannst du uns über den Support-Link in der App kontaktieren.</p>
+        <h2>Beendigung der Nutzung</h2>
+        <p>Du kannst die Nutzung der App jederzeit beenden. Bei Verstößen gegen diese Bedingungen kann der Zugriff auf die App eingeschränkt oder beendet werden.</p>
 
-    <h2>Schlussbestimmungen</h2>
-    <p>Sollten einzelne Bestimmungen dieser Nutzungsbedingungen unwirksam sein, bleiben die übrigen Bestimmungen davon unberührt. Die unwirksame Bestimmung wird durch eine wirksame Regelung ersetzt, die dem wirtschaftlichen Zweck der unwirksamen Bestimmung möglichst nahekommt.</p>
+        <h2>Kontakt</h2>
+        <p>Bei Fragen zu diesen Nutzungsbedingungen oder zur App kannst du uns über den Support-Link in der App kontaktieren.</p>
+
+        <h2>Schlussbestimmungen</h2>
+        <p>Sollten einzelne Bestimmungen dieser Nutzungsbedingungen unwirksam sein, bleiben die übrigen Bestimmungen davon unberührt. Die unwirksame Bestimmung wird durch eine wirksame Regelung ersetzt, die dem wirtschaftlichen Zweck der unwirksamen Bestimmung möglichst nahekommt.</p>
+    </div>
+
+    <div id="content-en" class="lang-en">
+        <h1>Terms of Service</h1>
+        <p><strong>As of: July 7, 2026</strong></p>
+        
+        <p>Welcome to <strong>nextset</strong>. By using this app, you agree to these Terms of Service. Please read them carefully.</p>
+
+        <hr>
+
+        <h2>Scope of Application</h2>
+        <p>These Terms of Service govern the use of the mobile app nextset as well as all associated features and content.</p>
+
+        <h2>Purpose of the App</h2>
+        <p>nextset serves to support the planning, documentation, and execution of workouts. The app is intended exclusively for personal, non-commercial use.</p>
+
+        <h2>Scope of Use</h2>
+        <p>You agree to use the app only lawfully and in accordance with these terms. You must not insert or distribute any content that violates applicable law, third-party rights, or public decency.</p>
+
+        <h2>User Responsibility</h2>
+        <p>You are responsible for ensuring that your devices, accounts, and access data are used securely. You bear the responsibility for the data you record or store within the app.</p>
+
+        <h2>Data and Storage</h2>
+        <p>nextset stores workout data, settings, and notification preferences locally on your device. The app does not use additional external services to process your data. Certain features may require permissions such as notifications or calendar access, which you must explicitly grant.</p>
+
+        <h2>Liability</h2>
+        <p>The app is provided without warranty for a particular purpose. We assume no liability for data loss, technical disruptions, outages, indirect damages, or any other consequences resulting from the use of the app, to the extent permitted by law.</p>
+
+        <h2>Changes and Updates</h2>
+        <p>We reserve the right to adapt or update the app, its features, or these Terms of Service at any time. We will announce changes in good time whenever possible.</p>
+
+        <h2>Termination of Use</h2>
+        <p>You can stop using the app at any time. In the event of violations of these terms, access to the app may be restricted or terminated.</p>
+
+        <h2>Contact</h2>
+        <p>If you have any questions regarding these Terms of Service or the app, you can contact us via the support link within the app.</p>
+
+        <h2>Severability Clause</h2>
+        <p>Should individual provisions of these Terms of Service be ineffective, the remaining provisions shall remain unaffected. The ineffective provision shall be replaced by an effective regulation that comes as close as possible to the economic purpose of the ineffective provision.</p>
+    </div>
+
+    <script>
+        function switchLanguage(lang) {
+            // 1. Alle Inhalts-Container verstecken
+            document.getElementById('content-de').classList.remove('visible');
+            document.getElementById('content-en').classList.remove('visible');
+            
+            // 2. Den richtigen Container anzeigen
+            document.getElementById('content-' + lang).classList.add('visible');
+            
+            // 3. Buttons optisch aktualisieren (active-Klasse verschieben)
+            const buttons = document.querySelectorAll('.lang-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            // Aktiven Button markieren
+            if (lang === 'de') {
+                buttons[0].classList.add('active');
+                document.documentElement.lang = 'de';
+            } else {
+                buttons[1].classList.add('active');
+                document.documentElement.lang = 'en';
+            }
+        }
+    </script>
 
 </body>
 </html>
