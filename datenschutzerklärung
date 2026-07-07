@@ -3,46 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutzungsbedingungen - nextset</title>
+    <title>Datenschutzerklärung / Privacy Policy - nextset</title>
+    <style>
+        /* Einfaches, cleanes Design */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Styles für den Sprachumschalter oben rechts */
+        .language-switcher {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .lang-btn {
+            background: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.2s ease;
+        }
+
+        .lang-btn:hover {
+            background: #e0e0e0;
+        }
+
+        .lang-btn.active {
+            background: #007aff;
+            color: white;
+            border-color: #007aff;
+        }
+
+        /* Blendet die jeweils inaktive Sprache aus */
+        .lang-en, .lang-de {
+            display: none;
+        }
+
+        /* Standardmäßig zeigen wir Deutsch (wird per JS gesteuert) */
+        .visible {
+            display: block;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Nutzungsbedingungen</h1>
-    <p><strong>Stand: 07.07.2026</strong></p>
-    
-    <p>Willkommen bei <strong>nextset</strong>. Mit der Nutzung dieser App erklärst du dich mit diesen Nutzungsbedingungen einverstanden. Bitte lies sie sorgfältig durch.</p>
+    <div class="language-switcher">
+        <button class="lang-btn active" onclick="switchLanguage('de')">DE</button>
+        <button class="lang-btn" onclick="switchLanguage('en')">EN</button>
+    </div>
 
-    <hr>
+    <div id="content-de" class="lang-de visible">
+        <h1>Datenschutzerklärung</h1>
+        <p><strong>Stand: 07.07.2026</strong></p>
+        
+        <p>Der Schutz deiner persönlichen Daten ist uns ein wichtiges Anliegen. Nachfolgend informieren wir dich darüber, wie wir mit deinen Daten im Rahmen der Nutzung der mobilen App <strong>nextset</strong> umgehen.</p>
 
-    <h2>Geltungsbereich</h2>
-    <p>Diese Nutzungsbedingungen regeln die Nutzung der mobilen App nextset sowie aller zugehörigen Funktionen und Inhalte.</p>
+        <hr>
 
-    <h2>Zweck der App</h2>
-    <p>nextset dient der Unterstützung bei der Planung, Dokumentation und Durchführung von Trainings. Die App ist ausschließlich für die persönliche, nicht-kommerzielle Nutzung gedacht.</p>
+        <h2>1. Grundsatz der lokalen Speicherung</h2>
+        <p>Die App nextset wurde so konzipiert, dass deine Privatsphäre maximal geschützt bleibt. Alle von dir eingegebenen Daten (wie Trainingspläne, dokumentierte Trainingseinheiten, Einstellungen und Benachrichtigungspräferenzen) werden <strong>ausschließlich lokal auf deinem Endgerät</strong> gespeichert.</p>
+        <p>Es findet keine Übertragung, Speicherung oder Verarbeitung deiner Trainingsdaten auf externen Servern durch uns statt. Wir haben zu keinem Zeitpunkt Zugriff auf deine Daten.</p>
 
-    <h2>Nutzungsumfang</h2>
-    <p>Du verpflichtest dich, die App nur rechtmäßig und in Übereinstimmung mit diesen Bedingungen zu verwenden. Du darfst keine Inhalte einfügen oder verbreiten, die gegen geltendes Recht, Rechte Dritter oder die guten Sitten verstoßen.</p>
+        <h2>2. Erhebung und Verarbeitung personenbezogener Daten</h2>
+        <p>Da alle Daten lokal verbleiben, erheben wir beim Nutzen der App keine personenbezogenen Daten. Eine Registrierung oder die Erstellung eines Online-Kontos ist für die Nutzung der App nicht erforderlich.</p>
 
-    <h2>Verantwortung des Nutzers</h2>
-    <p>Du bist dafür verantwortlich, dass deine Geräte, Konten und Zugangsdaten sicher verwendet werden. Du trägst die Verantwortung für die Daten, die du in der App erfasst oder speicherst.</p>
+        <h2>3. App-Berechtigungen</h2>
+        <p>Für den vollen Funktionsumfang kann die App bestimmte Berechtigungen auf deinem Gerät anfordern. Diese Berechtigungen werden nur aktiv, wenn du sie ausdrücklich erteilst:</p>
+        <ul>
+            <li><strong>Benachrichtigungen:</strong> Ermöglicht es der App, dich an anstehende Trainings zu erinnern oder Timer-Signale anzuzeigen.</li>
+            <li><strong>Kalenderzugriff:</strong> Ermöglicht es, geplante Trainingseinheiten direkt in den Kalender deines Geräts einzutragen.</li>
+        </ul>
+        <p>Du kannst diese Berechtigungen jederzeit in den Systemeinstellungen deines Geräts widerrufen oder anpassen.</p>
 
-    <h2>Daten und Speicherung</h2>
-    <p>nextset speichert Trainingsdaten, Einstellungen und Benachrichtigungspräferenzen lokal auf deinem Gerät. Die App nutzt keine zusätzlichen externen Dienste zur Verarbeitung deiner Daten. Für bestimmte Funktionen können Berechtigungen wie Benachrichtigungen oder Kalenderzugriff benötigt werden, die du ausdrücklich erteilen musst.</p>
+        <h2>4. Drittanbieter und Analysedienste</h2>
+        <p>Die App nutzt keine Analysedienste (wie z. B. Google Analytics oder Firebase Analytics) und keine Werbenetzwerke, die dein Nutzungsverhalten tracken oder Profile erstellen.</p>
 
-    <h2>Haftung</h2>
-    <p>Die App wird ohne Gewährleistung für einen bestimmten Zweck bereitgestellt. Wir übernehmen keine Haftung für Datenverlust, technische Störungen, Ausfälle, indirekte Schäden oder sonstige Folgen, die aus der Nutzung der App entstehen, soweit dies gesetzlich zulässig ist.</p>
+        <h2>5. Deine Rechte (Auskunft, Löschung, Datenübertragbarkeit)</h2>
+        <p>Da wir keine Daten von dir auf unseren Systemen speichern, können wir dir keine Auskunft über deine Daten geben oder diese für dich löschen. Du hast jedoch die volle Kontrolle:</p>
+        <ul>
+            <li><strong>Löschung:</strong> Du kannst alle Daten selbst unwiderruflich löschen, indem du die App von deinem Gerät deinstallierst oder den App-Kasch/Speicher in den Einstellungen deines Betriebssystems leerst.</li>
+        </ul>
 
-    <h2>Änderungen und Aktualisierungen</h2>
-    <p>Wir behalten uns vor, die App, ihre Funktionen oder diese Nutzungsbedingungen jederzeit anzupassen oder zu aktualisieren. Änderungen werden wir nach Möglichkeit rechtzeitig bekanntgeben.</p>
+        <h2>6. Kontakt</h2>
+        <p>Bei Fragen zum Datenschutz im Zusammenhang mit der App kannst du uns über den Support-Link direkt in der App kontaktieren.</p>
+    </div>
 
-    <h2>Beendigung der Nutzung</h2>
-    <p>Du kannst die Nutzung der App jederzeit beenden. Bei Verstößen gegen diese Bedingungen kann der Zugriff auf die App eingeschränkt oder beendet werden.</p>
+    <div id="content-en" class="lang-en">
+        <h1>Privacy Policy</h1>
+        <p><strong>As of: July 7, 2026</strong></p>
+        
+        <p>The protection of your personal data is an important concern to us. Below we inform you about how we handle your data when using the mobile app <strong>nextset</strong>.</p>
 
-    <h2>Kontakt</h2>
-    <p>Bei Fragen zu diesen Nutzungsbedingungen oder zur App kannst du uns über den Support-Link in der App kontaktieren.</p>
+        <hr>
 
-    <h2>Schlussbestimmungen</h2>
-    <p>Sollten einzelne Bestimmungen dieser Nutzungsbedingungen unwirksam sein, bleiben die übrigen Bestimmungen davon unberührt. Die unwirksame Bestimmung wird durch eine wirksame Regelung ersetzt, die dem wirtschaftlichen Zweck der unwirksamen Bestimmung möglichst nahekommt.</p>
+        <h2>1. Principle of Local Storage</h2>
+        <p>The nextset app is designed to maximize your privacy. All data entered by you (such as workout plans, documented training sessions, settings, and notification preferences) are stored <strong>exclusively locally on your mobile device</strong>.</p>
+        <p>No transmission, storage, or processing of your workout data takes place on external servers by us. We do not have access to your data at any time.</p>
+
+        <h2>2. Collection and Processing of Personal Data</h2>
+        <p>Since all data remains local, we do not collect any personal data when you use the app. Registration or the creation of an online account is not required to use the app.</p>
+
+        <h2>3. App Permissions</h2>
+        <p>For full functionality, the app may request certain permissions on your device. These permissions only become active if you explicitly grant them:</p>
+        <ul>
+            <li><strong>Notifications:</strong> Allows the app to remind you of upcoming workouts or display timer signals.</li>
+            <li><strong>Calendar Access:</strong> Allows scheduled workout sessions to be entered directly into your device's calendar.</li>
+        </ul>
+        <p>You can revoke or adjust these permissions at any time in your device's system settings.</p>
+
+        <h2>4. Third-Party Services and Analytics</h2>
+        <p>The app does not use any analytics services (such as Google Analytics or Firebase Analytics) or advertising networks that track your usage behavior or create profiles.</p>
+
+        <h2>5. Your Rights (Information, Erasure, Data Portability)</h2>
+        <p>Since we do not store any of your data on our systems, we cannot provide you with information about your data or delete it for you. However, you have full control:</p>
+        <ul>
+            <li><strong>Erasure:</strong> You can irrevocably delete all data yourself by uninstalling the app from your device or clearing the app cache/storage in your operating system settings.</li>
+        </ul>
+
+        <h2>6. Contact</h2>
+        <p>If you have any questions about data privacy in connection with the app, you can contact us via the support link directly within the app.</p>
+    </div>
+
+    <script>
+        function switchLanguage(lang) {
+            // 1. Alle Inhalts-Container verstecken
+            document.getElementById('content-de').classList.remove('visible');
+            document.getElementById('content-en').classList.remove('visible');
+            
+            // 2. Den richtigen Container anzeigen
+            document.getElementById('content-' + lang).classList.add('visible');
+            
+            // 3. Buttons optisch aktualisieren (active-Klasse verschieben)
+            const buttons = document.querySelectorAll('.lang-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            // Aktiven Button markieren
+            if (lang === 'de') {
+                buttons[0].classList.add('active');
+                document.documentElement.lang = 'de';
+            } else {
+                buttons[1].classList.add('active');
+                document.documentElement.lang = 'en';
+            }
+        }
+    </script>
 
 </body>
 </html>
